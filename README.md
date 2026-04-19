@@ -1,16 +1,32 @@
-# React + Vite
+Signal board - A review queue for an AI-assisted product team. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- Search, filter, and sort 25 review items
+- A Card-based responsive layout
+- Detail modal with metadata and actions like adding notes
+  
+- Keyboard shortcuts:
+  - `Esc` → close modal
+  
+- Empty state and loading state handling
+- Reset filters via logo click
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tradeoffs & Limitations
 
-## React Compiler
+- Used a static dataset instead of a mocked API to keep implementation simple
+- Did not implement full loading/error states with backend integration
+- Local persistence (e.g., saving filters/sort) was skipped to avoid added complexity
+- UI built using Bootstrap for speed instead of custom styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+These can be extended easily in a production environment.
 
-## Expanding the ESLint configuration
+## Setup Instructions
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## tech - html, css, bootstrap, react.js.
+## AI usage - 
+- The code structure is handled and reviewed manually but i used claude to assist with functionality of loading and empty state, debugging, understanding concepts.
